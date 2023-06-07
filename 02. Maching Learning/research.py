@@ -101,7 +101,7 @@ class NaiveBeyes():
         # print(np.concatenate((self.y_pred.reshape(len(self.y_pred), 1),
         #       self.y_test.reshape(len(self.y_test), 1)), 1))
 
-    def test_result(self):    swasw
+    def test_result(self):
         # Making the Confusion Matrix
         cm = confusion_matrix(self.y_test, self.y_pred)
         print('Confusion Matrix : ', cm)
