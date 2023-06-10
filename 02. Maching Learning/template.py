@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from matplotlib.colors import ListedColormap
+from sklearn import metrics
 from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
@@ -21,9 +22,11 @@ class SmokingHistory(Enum):
     NOTCURRENT = 'not current'
     EVER = 'ever'
 
+
 class Gender(Enum):
     MALE = 'Male'
     FEMALE = 'Female'
+
 
 class NaiveBeyes():
 
@@ -64,59 +67,44 @@ class NaiveBeyes():
                 item[4] = 5
             else:
                 print(f'Unknown Value : {item[4]}')
-        # print('X : ', self.X)
-        # print('Y : ', self.y)
 
     def split_dataset(self):
-        # Splitting the dataset into the Training set and Test set
-        self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(
-            self.X, self.y, test_size=0.25, random_state=0)
-        # print('X Train : ', self.X_train)
-        # print('Y Train : ', self.y_train)
-        # print('X Test : ',self.X_test)
-        # print('Y Test : ', self.y_test)
+        # TODO: Split the self.X & self.y (dataset) into Training data and Test data
+        print('generate this code')
 
     def feature_scaling(self):
-        # Feature Scaling
-        self.X_train = self.sc.fit_transform(self.X_train)
-        self.X_test = self.sc.transform(self.X_test)
-        # print(self.X_train)
-        # print(self.X_test)
+        # TODO: Make a Feature Scaling for the training
+        print('generate this code')
 
     def training_dataset(self):
-        # Training the Naive Bayes model on the Training set
-        classifier = GaussianNB()
-        classifier.fit(self.X_train, self.y_train)
-
-        # Predicting a new result
-        result = classifier.predict(self.sc.transform([self.data]))
-        print('Predict Result : ', result)
-        if result == 0:
-            print('You are not diabetes!')
-        else:
-            print('You are diabetes!')
-
-        # Predicting the Test set results
-        self.y_pred = classifier.predict(self.X_test)
-        # print(np.concatenate((self.y_pred.reshape(len(self.y_pred), 1),
-        #       self.y_test.reshape(len(self.y_test), 1)), 1))
+        # TODO: Training the train data with Naive Bayes Algorithm to make the model
+        print('generate this code')
 
     def test_result(self):
-        # Making the Confusion Matrix
-        cm = confusion_matrix(self.y_test, self.y_pred)
-        print('Confusion Matrix : ', cm)
-        score = accuracy_score(self.y_test, self.y_pred)
-        print('Accuracy score : ', score)
+        # TODO: Print the Confusion Matrix and make a prediction accurate percentage based on the model on training_dataset method
+        print('generate this code')
 
-gender = 1 
+    def predict_data(self):
+        # TODO: Predict the self.data input from the user based on the created modoel
+        print('generate this code')
+
+    def draw_cm_matrix(self):
+        cm_display = metrics.ConfusionMatrixDisplay(
+            confusion_matrix=self.cm, display_labels=[False, True])
+        cm_display.plot()
+        plt.show()
+
+
+gender = 1
 age = 19
 hypertension = 0
-heart_disease =  0
+heart_disease = 0
 smoking_history = 0
 bmi = 24.2
 HbA1c_level = 5
-blood_glucose_level = 130 
+blood_glucose_level = 130
 
-data = [gender, age, hypertension, heart_disease, smoking_history, bmi, HbA1c_level, blood_glucose_level]
+data = [gender, age, hypertension, heart_disease,
+        smoking_history, bmi, HbA1c_level, blood_glucose_level]
 
 model = NaiveBeyes(file_name='diabetes_data.csv', data=data)
