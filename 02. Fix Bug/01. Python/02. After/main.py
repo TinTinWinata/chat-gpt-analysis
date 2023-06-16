@@ -17,7 +17,7 @@ class Item:
     def getPrice(self):
         shippingPrice = self.getShippingPrice()
         return shippingPrice * self.weight
-    
+
 
 # Additional Notes from Chat GPT,
 # In the refactored code:
