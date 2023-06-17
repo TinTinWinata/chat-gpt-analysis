@@ -86,7 +86,6 @@ class NaiveBeyes():
 
         # Predicting a new result
         result = classifier.predict(self.sc.transform([self.data]))
-        print('Predict Result : ', result)
         if result == 0:
             print('You are not diabetes!')
         else:
@@ -98,7 +97,6 @@ class NaiveBeyes():
     def test_result(self):
         # Making the Confusion Matrix
         self.cm = confusion_matrix(self.y_test, self.y_pred)
-        print('Confusion Matrix : ', self.cm)
 
         score = accuracy_score(self.y_test, self.y_pred)
         print('Accuracy score : ', score)
