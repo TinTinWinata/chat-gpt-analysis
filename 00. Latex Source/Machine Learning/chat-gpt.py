@@ -38,7 +38,6 @@ class NaiveBeyes():
         self.feature_scaling()
         self.training_dataset()
         self.test_result()
-        self.predict_data()
         self.draw_cm_matrix()
 
     def load_dataset(self, file_name):
