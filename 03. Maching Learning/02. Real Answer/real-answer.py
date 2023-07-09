@@ -38,7 +38,6 @@ class NaiveBeyes():
         self.feature_scaling()
         self.training_dataset()
         self.test_result()
-        self.predict_data()
         self.draw_cm_matrix()
 
     def load_dataset(self, file_name):
@@ -71,37 +70,36 @@ class NaiveBeyes():
                 print(f'Unknown Value : {item[4]}')
 
     def split_dataset(self):
-        # TODO: Split the self.X & self.y (dataset) into Training data and Test data
+        # Splitting the dataset into the Training set and Test set
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(
             self.X, self.y, test_size=0.25, random_state=0)
 
     def feature_scaling(self):
-        # TODO: Make a Feature Scaling for the training
+        # Feature Scaling
         self.X_train = self.sc.fit_transform(self.X_train)
+        self.X_test = self.sc.transform(self.X_test)
 
     def training_dataset(self):
-        # TODO: Training the train data with Naive Bayes Algorithm to make the model
-        self.classifier = GaussianNB()
-        self.classifier.fit(self.X_train, self.y_train)
+        # Training the Naive Bayes model on the Training set
+        classifier = GaussianNB()
+        classifier.fit(self.X_train, self.y_train)
+
+        # Predicting a new result
+        result = classifier.predict(self.sc.transform([self.data]))
+        if result == 0:
+            print('You are not diabetes!')
+        else:
+            print('You are diabetes!')
+
+        # Predicting the Test set results
+        self.y_pred = classifier.predict(self.X_test)
 
     def test_result(self):
-        # TODO: Print the Confusion Matrix and make a prediction accurate percentage based on the model on training_dataset method
-        self.X_test = self.sc.transform(self.X_test)
-        y_pred = self.classifier.predict(self.X_test)
-        self.cm = confusion_matrix(self.y_test, y_pred)
-        accuracy = accuracy_score(self.y_test, y_pred)
-        print("Confusion Matrix:")
-        print(self.cm)
-        print("Prediction Accuracy:", accuracy)
+        # Making the Confusion Matrix
+        self.cm = confusion_matrix(self.y_test, self.y_pred)
 
-    def predict_data(self):
-        # TODO: Predict the self.data input from the user based on the created modoel
-        data_scaled = self.sc.transform([self.data])
-        prediction = self.classifier.predict(data_scaled)
-        if prediction[0] == 1:
-            print("The user is predicted to have diabetes.")
-        else:
-            print("The user is predicted to not have diabetes.")
+        score = accuracy_score(self.y_test, self.y_pred)
+        print('Accuracy score : ', score)
 
     def draw_cm_matrix(self):
         cm_display = metrics.ConfusionMatrixDisplay(
