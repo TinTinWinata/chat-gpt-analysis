@@ -113,7 +113,7 @@ minimum height=1cm,text centered, draw=black, fill=red!30, text width = 5cm]
 \maketitle
 
 \begin{abstract}
-Artificial Intelligence (AI) is a technology that continues to develop and is increasingly being used in various aspects of life, including product and service development.  One type of AI that is developing rapidly is Chatbot, which is a computer program that can communicate with users via chat or voice applications.  However, there is still much debate among scientists and professionals about whether AI advancements like ChatGPT can help software engineer on working  daily task or even replace the work of software engineers.  So, on this occasion, we conduct research on whether AI (Artificial Intelligent) is capable of help software engineer and how far AI can assisting software engineer. In this study, we aim to evaluate the effectiveness of ChatGPT as a AI tool for code retrieval and its potential to help or replace software engineer. Our research methodology involves ChatGPT to refactor provided code, and make a simple application from scratch. The results of this research is, AI Chatbot model like ChatGPT cannot replace software developers 100\%. But it can actively help software developers in building a software on their daily life, especially in machine learning, application creation, and code refactoring.
+Artificial intelligence (AI) is a technology that is constantly evolving and is being applied more frequently in many facets of society, including product and service development. Chatbots, which are computer programs that can connect with people through chat or voice apps, are one sort of AI that is evolving quickly. However, there is still much debate among scientists and professionals about whether AI advancements like ChatGPT can help software engineers with their daily tasks or even replace the work of software engineers. So, on this occasion, we conduct research on whether AI (artificial intelligence) is capable of helping software engineers and how far AI can assist software engineers. In this study, we aim to evaluate the effectiveness of ChatGPT as an AI tool for code retrieval and its potential to help or replace software engineers. Our research methodology involves using ChatGPT to refactor provided code and make a simple application from scratch. The results of this research show that AI chatbot models like ChatGPT cannot replace software developers 100%. But it can actively help software developers build software in their daily lives, especially in machine learning, application creation, and code refactoring.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -121,46 +121,43 @@ Artificial Intelligent, Software Development, Chat Bot
 \end{IEEEkeywords}
 
 \section{Introduction}
-Software development is a difficult, that's need a high level of ability and knowledge. Yet, new potential to increase the effectiveness of software development have emerged as a result of recent developments in artificial intelligence. Use of ChatGPT, a sophisticated language model trained on the GPT-3.5 architecture, is one such development. With encouraging outcomes, ChatGPT has been used to produce code for a number of software applications [1]. In this essay, we will investigate the use of ChatGPT to generate code for software applications and assess the usability and quality of the produced code.
+Software development is difficult and requires a high level of ability and knowledge. Yet, new potential to increase the effectiveness of software development has emerged as a result of recent developments in artificial intelligence. The use of ChatGPT, a sophisticated language model trained on the GPT-3.5 architecture, is one such development. With encouraging outcomes, ChatGPT has been used to produce code for a number of software applications [1]. In this essay, we investigate the use of ChatGPT to generate code for software applications and assess the usability and quality of the produced code.
 
-ChatGPT is a potent tool that can produce code and natural language writing. ChatGPT has been trained in a variety of programming languages and can learn from a great amount of data. ChatGPT can produce code that follows the syntax and structure of several programming languages as a result [1].
+ChatGPT is a potent tool that can produce code and natural language writing. ChatGPT has been trained in a variety of programming languages and can learn from a great deal of data. When creating code with ChatGPT, input text is given to the model, which subsequently creates code depending on the input [2]. Human software engineers can then polish and enhance the generated code. The speed and effectiveness of software development can both be increased by this technique.
 
-When creating code with ChatGPT, input text is given to the model, which subsequently creates code depending on the input [2]. Human software engineers can then polish and enhance the generated code. The speed and effectiveness of software development can both be increased by this technique.
+ChatGPT-produced software's usefulness and quality The findings have been positive, with the program doing well in several tasks, including natural language processing, image recognition, and game development [2]. However, some people said the software produced by ChatGPT still has certain limitations. In rare circumstances, the software may not operate as planned because of mistakes in the code. Also, code produced by ChatGPT could not be as effective as code authored by real software developers [2]. While some work has been done to better understand the interplay between Software Engineering and AI, we still lack methodologies for classifying ways of implementing AI in software systems as well as analyzing and understanding the hazards that this creates. Only by doing so will we be able to develop tools and solutions to assist reduce them [4]. This experiment aims to provide an overview of AI's benefits and limitations in software development by examining current literature and suggesting topics for further investigation [3]–[6]. 
 
-ChatGPT-produced software's usefulness and quality. The findings have been positive, with the program doing well in several tasks, including natural language processing, image recognition, and game development [2].
-However, some people said, the software produced by ChatGPT still has certain limitations. In rare circumstances, the software may not operate as planned because of mistakes in the created code. Also, code produced by ChatGPT could not be as effective as code authored by real software developers [2]. This experiments aims to provide an overview of AI's benefits and limitations in software development by examining current literature and suggesting topics for further investigation [3]–[6]. 
+Risk management is a vital aspect of software development; in this situation, AI has assisted developers in analyzing every possible risk and devising solutions to reduce it [7]. Moreover, in software testing, AI-driven techniques have the potential to revolutionize quality assurance work, speed up time to market, and enable businesses to create more complex software [8]–[10]. AI has been employed in various software development sectors, including project management, design, testing, and requirements engineering, with the potential to enhance software quality by automating repetitive tasks, identifying mistakes, and supporting decision-making [11].
 
-In software testing, AI-driven techniques have the potential to revolutionize quality assurance work, speed up time to market, and enable businesses to create more complex software [8]–[10]. AI has been employed in various software development sectors, including project management, design, testing, and requirements engineering, with the potential to enhance software quality by automating repetitive tasks, identifying mistakes, and supporting decision-making [11].
+AI's impact extends beyond traditional software development to industries such as e-commerce and IT telecom, where AI-powered chatbots have been shown to improve customer satisfaction and service efficiency [12]–[15]. In web-based software development, AI and machine learning can lead to higher quality and efficiency in applications [16], [17]. Despite the advantages, developing AI-based chatbots can be challenging, with IBM Watson being identified as the best method among widely used Natural Language Understanding (NLU) techniques [18].
 
-AI's impact extends beyond traditional software development to industries such as e-commerce and IT Telecom, where AI-powered chatbots have been shown to improve customer satisfaction and service efficiency [12]–[15]. In web-based software development, AI and Machine Learning can lead to higher quality and efficiency in applications [16], [17]. Despite the advantages, developing AI-based chatbots can be challenging, with IBM Watson being identified as the best method among widely used Natural Language Understanding (NLU) techniques [18].
+AI has also been employed in software development effort estimation, with the FNN approach demonstrating higher accuracy in overcoming uncertainty and vagueness [19]. Furthermore, natural language processing (NLP) advancements, such as GPT-3, GPT-4, and ChatGPT, have generated interest in their potential applications in computer programming [20], [21]. ChatGPT has demonstrated promising results in producing code snippets [2], [22], and [23]. ChatGPT can also help programmers fix their bugs efficiently [1].
 
-AI has also been employed in software development effort estimation, with the FNN approach demonstrating higher accuracy in overcoming uncertainty and vagueness [19]. Furthermore, natural language processing (NLP) advancements, such as GPT-3, GPT-4, and ChatGPT, have generated interest in their potential application in computer programming [20], [21]. ChatGPT has demonstrated promising results in producing code snippets [2], [22], [23]. ChatGPT can also help programmers with fixing their bug efficiently [1]. However, concerns have been raised about the quality and security of generated code [9], [25], [26].
-
-AI offers numerous advantages in software development, but it is essential to consider the drawbacks, limitations, ethical, and transparency issues surrounding this technology. Therefore, in this research we have experiments that determine, can Chat GPT help or do programmer jobs in term of Software Engineering. This paper is arranged as follows: first, in section 2 we discuss the methodology of our experiments, such as how we conduct our experiments, prompting, or how we determine the results of our test. In section 3 we conducted the experiment that discussed in the methodology section. Finally in section 4, we  concluded  our  work with the experiment results and make an future improvement for the next research.  
+AI, such as ChatGPT, offers numerous advantages in software development, but it is essential to consider the drawbacks, limitations, ethical, and transparency issues surrounding this technology [9], [25], [26]. Even with that understanding, ChatGPT could pass Algorithm and Data Structure while participating in an undergraduate computer science examination, which in other circumstance students might use it to cheat [24]. Furthermore, despite the fact that there are established rules known as the seven key requirements for trustworthy AI, many businesses do not follow them effectively [27]. Therefore, in this research, we have experiments that determine whether ChatGPT can help or do programmer jobs in terms of software engineering. This paper is arranged as follows: First, in Section 2, we discuss the methodology of our experiments, such as how we conduct our experiments, prompting, or how we determine the results of our tests. In Section 3, we conducted the experiment that was discussed in the methodology section. Finally, in Section 4, we concluded our  work with the experiment results and made future improvements for the next research.
 
 \section{Methodology}
-Through a series of tests, we ask the ChatGPT model to carry out various coding and software development-related activities as part of the study. The ChatGPT is available on https://chat.openai.com/ and can be used and open by all registered account. Our model is using 3.5 ChatGPT version so you can used for testing the available code. We use a simple prompting techniques for refactor, bug code, and machine learning like "refactor the below code with ...", etc. 
+Through a series of tests, we asked the ChatGPT model to carry out various coding and software development-related activities as part of the study. The ChatGPT is available on https://chat.openai.com/ and can be used and opened by all registered accounts. Our model is using the 3.5 ChatGPT version, so you can use it for testing the available code. We use simple prompting techniques for refactoring, bug fixing, and machine learning, like "refactor the below code with...", etc.
 
-You can get all the source code and implementation information in our GitHub repository https://github.com/TinTinWinata/chat-gpt-analysis. The repository includes all of the tested's experiment, including refactor code, machine learning, simple application, and as well as the entire codebase, including the HTML, and JavaScript files.
+To evaluate the results of the experiments, after we prompt ChatGPT, we analyze the answers given by ChatGPT with the answers that have been created by our team and draw conclusions about whether the answers given by ChatGPT are in accordance with our answers. For the simple application experiment, the program was directly tested, and our team provided a conclusion on the created program by ChatGPT.
 
-
+You can get all the source code and implementation information in our GitHub repository: https://github.com/TinTinWinata/chat-gpt-analysis. The repository includes all of the tested's experiments, including refactoring code, machine learning, and simple applications, as well as the entire codebase, including the HTML and JavaScript files.
 
 \subsection{Refactor Code}
-Our team provide a piece of smelly code with C\# language, that consist of Self Encapsulation Field and Inline Temp. You can see the explanation of smell code at refactoring guru (https://refactoring.guru/) and the code is available on our github repository. The piece of smell code that must be refactored sent to the ChatGPT model by using a simple prompt techniques. The code need to be refactored, and the ChatGPT model requested to submit a new and improved version of the code. The result of the refactored code getting analyzed with various scores like effectiveness and the correctness of code. 
+Our team provided a piece of smelly code in C\#  that consisted of a self-encapsulation field and an inline temperature. You can see the explanation of smell code at Refactoring Guru (https://refactoring.guru/), and the code is available on our github repository. The piece of smell code that must be refactored is sent to the ChatGPT model by using simple prompt techniques. The code needs to be refactored, and the ChatGPT model requested that a new and improved version of the code be submitted. The result of the refactored code gets analyzed with various scores, like effectiveness and correctness of code. 
 
 
 \subsection{Simple Application}
-The ChatGPT model asked to design a tic tac toe game in order to build a simple application. The ChatGPT model required to provide the JavaScript programming language code required to develop the application and ensure its proper operation. Furthermore, we challenged ChatGPT to add bots that can fight humans, as well as to make the bot smart enough to beat humans. The generated code then be tested by playing the game and determining who wins.
+The ChatGPT model was asked to design a tic-tac-toe game in order to build a simple application. The ChatGPT model is required to provide the JavaScript programming language code required to develop the application and ensure its proper operation. Furthermore, we challenged ChatGPT to add bots that can fight humans, as well as to make the bot smart enough to beat humans. The generated code is then tested by playing the game and determining who wins.
 
 \vspace{0pt}
 \begin{lstlisting}[caption={Simple Application Prompt}, basicstyle=\ttfamily,language=TeX]
 can you make a tic tac toe game in javascript that comes with human vs bot game, where the human cannot win against the bot
 \end{lstlisting}
 
-From figure above, The prompt is a clear and concise question asking for the creation of a specific application—a tic-tac-toe game in JavaScript. The prompt further specifies that the game should include a human vs bot mode, where the human player cannot win against the bot player.
+From the figure above, the prompt is a clear and concise question asking for the creation of a specific application—a tic-tac-toe game in JavaScript. The prompt further specifies that the game should include a human vs. bot mode where the human player cannot win against the bot player.
 
 \subsection{Machine Learning}
-The results of this machine learning testing is to create a machine learning code to predict whether the user has diabetes or not. This machine learning code prediction provided by naïve bayes approach to make the 2 type of classifications that is diabetes classification and not diabetes classification. 
+The results of this machine learning testing are to create a machine learning code to predict whether the user has diabetes or not. This machine learning code prediction is provided by the Naïve Bayes approach to make the two types of classifications: diabetes classification and not diabetes classification.
 
 \begin{figure}[H]
     \centering
@@ -178,13 +175,13 @@ The results of this machine learning testing is to create a machine learning cod
     \caption{Flowchart of the Machine Learning Methodology Process}
 \end{figure}
 
-First, we create a machine learning code to predict whether user is diabetes or not. We're use naive bayes approach to make the code, the dataset that we used is diabetes data that you can found in kaggle and our github repository. This code provided with python language. We also use an advanced library like sklearn, numpy, matplotlib, and pandas so that we can see the performance of the ChatGPT whether it can use the library that has been provided or not. 
+First, we create a machine learning code to predict whether the user has diabetes or not. We're using a naive bayes approach and python programming language to make the machine learning code. The dataset that we used is diabetes data that you can find in Kaggle and our github repository. We also use an advanced library like sklearn, numpy, matplotlib, and pandas so that we can see the performance of the ChatGPT to using the provided library.
 
-After we create the machine learning code, We discard the machine learning important modelling code and leave the rest of the code to the ChatGPT. When we discard important code we give a sign to ChatGPT to recreate the code at specific section. For making a fair comparison, we didn't remove the load dataset code because ChatGPT model didn't know and didn't see  the column and the value of dataset. 
+After we create the code, we discard the important modeling code and leave the rest of the code to the ChatGPT. When we discard important code, we give a sign to ChatGPT to recreate the code in a specific section. For a fair comparison, we didn't remove the load dataset code because the ChatGPT model didn't know the column and the value of the dataset.
 
 \lstinputlisting[language=Python, caption={Template Code to be Filled by ChatGPT Model},showspaces=false, showstringspaces=false]{Machine Learning/template.py}
 
-The ChatGPT model  built the machine learning model and generate the forecast of diabetes. The goal of this methodology is to make a comparison result of our first code who made by our team and the result of generated code by ChatGPT. Then, we analyzed the result of the prediction for the correct percentage using confussion matrix and compared the value result with the our team code.
+The ChatGPT model built the machine learning model and generated the forecast of diabetes. The goal of this methodology is to make a comparison between our first code, which was made by our team, and the result of the generated code by ChatGPT. Then, we analyzed the result of the prediction for the correct percentage using a confusion matrix and compared the value result with our team code.
 
 \begin{lstlisting}[caption={Given Input \& Our Diabetes Result}, basicstyle=\scriptsize\ttfamily]
 gender = 1
@@ -201,16 +198,16 @@ Accuracy score: 0.90488
 \end{lstlisting}
 
 \section{Experiments \& Results}
-We outline the experiments conducted to address our research questions in this experiments and result   section. In Section A, we look at how ChatGPT may assist programmers with code refactoring. We examine ChatGPT's capabilities for basic application generation and machine learning prediction in Sections B and C. Refactor Code.
+We outline the experiments conducted to address our research questions in this experiment and result section. In Section A, we look at how ChatGPT may assist programmers with code refactoring. We examine ChatGPT's capabilities for basic application generation and machine learning prediction in Sections B and C. Refactor Code.
 
 \subsection{Refactor Code}
-Leveraging the power of Artificial Intelligence, we conducted experiments using C\#. Based on the experiment results, ChatGPT provides best practices for code refactoring, including separating logic into multiple functions, avoiding code duplication, and more.
+Leveraging the power of artificial intelligence, we conducted experiments using C#. Based on the experiment results, ChatGPT provides best practices for code refactoring, including separating logic into multiple functions, avoiding code duplication, and more.
 
 \lstinputlisting[language={[Sharp]C}, caption={Unfactored Code}]{Refactor/before.cs}
 
 \lstinputlisting[language={[Sharp]C}, caption={Refactored Code}]{Refactor/after.cs}
 
-The figure above shows ChatGPT improved the structure, readability, and adherence to best practices in application development. As we can see as a languange modelling, ChatGPT can know where's the smell code and implemented a refactored code. They remove the Self Encapsulation Field smell code and implement getter and setter in the code. But for the inline temp smell in the previous code, the ChatGPT is remove the code and changed to only deducted the current money. This getting be a problem, because initially we want to get our money but instead, the money is not received and produce a void return. 
+The figure above shows ChatGPT improved the structure, readability, and adherence to best practices in application development. As we can see from language modeling, ChatGPT can know where's the smell code and implement a refactored code. They remove the self-encapsulation field smell code and implement getter and setter in the code. But for the inline temperature smell in the previous code, the ChatGPT removed the code and changed it to only deduct the current money. This will be a problem because initially we want to get our money, but instead, the money is not received and produces a void return.
 
 The results generated by ChatGPT also align with universal principles and standards in application development. The resulting code is well-structured, easier to test, and maintainable. Overall, ChatGPT can greatly assist in the software development process by addressing smell code and enhancing the overall code quality of applications. However, the code created by ChatGPT may contain mistakes and misconceptions. As developers, it is critical that we comprehend and properly evaluate the code generated by ChatGPT.
 
@@ -219,7 +216,7 @@ The results generated by ChatGPT also align with universal principles and standa
 \subsection{Simple Application}
 The analysis focuses on how well ChatGPT generates code that can execute properly and adhere to standards. We put it to the test by giving ChatGPT a prompt to create a game of tic-tac-toe that uses HTML, CSS, and JavaScript programming languages. As a result, when we play the game of tic-tac-toe, the ChatGPT model is able to accomplish this and pass the test.
 
-We also resent the prompt to ChatGPT to enable human vs. bot play in the game. We also asked it to make the bot as intelligent as possible so that it could outplay people at the game of tic-tac-toe. It turns out ChatGPT uses the mini-max algorithm to decide the best moves in order to guarantee that the bot always wins or at least manages to achieve a draw when playing the tic-tac-toe game.
+We also sent the prompt to ChatGPT to enable human vs. bot play in the game. We also asked it to make the bot as intelligent as possible so that it could outplay people at the game of tic-tac-toe. It turns out ChatGPT uses the mini-max algorithm to decide the best moves in order to guarantee that the bot always wins or at least manages to achieve a draw when playing the tic-tac-toe game.
 
 This experiment demonstrated ChatGPT's flexibility in implementing complex algorithms in addition to producing functional code. ChatGPT successfully developed a fully playable tic-tac-toe game with a clever bot opponent by combining its knowledge of game theory and programming languages. This highlights the model's potential even more as a useful tool for creating interactive programs and games.
 
@@ -243,7 +240,7 @@ This experiment demonstrated ChatGPT's flexibility in implementing complex algor
 \end{figure}
 
 \subsection{Machine Learning}
-Our machine learning research centered on using ChatGPT to generate code that could determine whether user input suggests diabetes. According to the methodology section, we used machine learning code templates that were already created to be filled in by ChatGPT model.
+Our machine learning research centered on using ChatGPT to generate code that could determine whether user input suggests diabetes. According to the methodology section, we used machine learning code templates that were already created to be filled in by the ChatGPT model.
 
 \lstinputlisting[language=Python, caption={Model Code that Filled from Template by ChatGPT},showspaces=false, showstringspaces=false]{Machine Learning/chat-gpt-model-only.py}
 
@@ -257,31 +254,31 @@ bmi = 24.2
 HbA1c_level = 5
 blood_glucose_level = 130
 
-You are not diabetes!
-Accuracy score: 0.90488
+Prediction Accuracy: 0.90488
+The user is predicted to not have diabetes.
 \end{lstlisting}
 
-Based on the user's input, this code was used to determine how likely it was that they would get diabetes. We conclude the code that is generated by ChatGPT has the same answer as the human code made. The code also has 90.49\% accuracy percentage to predict whether user is diabetes or not, the same percentage number that the human-created code also have.
+Based on the user's input, this code was used to determine how likely it was that they would get diabetes. We conclude that the code that is generated by ChatGPT has the same answer as the human code. The code also has a 90.49\% accuracy percentage to predict whether the user has diabetes or not, the same percentage number that the human-created code also has.
 
 \begin{figure}[htbp]
-\centerline{\includegraphics[width=1\linewidth]{Machine Learning/Diabetes.png}}
+\centerline{\includegraphics[width=1.05\linewidth]{Machine Learning/Diabetes_H.png}}
 \caption{}
 \label{simple app won}
 \end{figure}
 
-Figure above, shows the confusion matrix for both human-coded and ChatGPT-generated solutions to give the visualisation of performance. This visual depiction allows us to evaluate the true positives, true negatives, false positives, and false negatives. By comparing the confusion matrices, ChatGPT performs similarly to human code in terms of accuracy.
+Figure above shows the confusion matrix for both human-coded and ChatGPT-generated solutions to give a visualization of performance. This visual depiction allows us to evaluate the true positives, true negatives, false positives, and false negatives. By comparing the confusion matrices, ChatGPT performs similarly to human code in terms of accuracy.
 
 Overall, the machine learning tests showed how well ChatGPT generates code for machine learning tasks, particularly for determining whether or not a person has diabetes. These findings demonstrate ChatGPT's potential as a useful tool for tackling difficult machine learning challenges. ChatGPT's ability to create accurate code enables it to aid developers and academics in efficiently handling challenging machine learning problems.
 
 \section{Conclusion}
 
-The trials demonstrated ChatGPT's potential as a useful tool in software development. Developers may use its language generating features to help with bug patches, code restructuring, machine learning jobs, and the creation of small apps. While there are still limits and potential for improvement, ChatGPT provides intriguing opportunities to increase the efficacy and efficiency of software development processes.
+The trials demonstrated ChatGPT's potential as a useful tool in software development. Developers may use its language generating features to help with bug patches, code restructuring, machine learning jobs, and the creation of small apps. While the experiments demonstrated ChatGPT's promise, it is crucial to recognize its limits. In rare circumstances, the code produced may contain flaws or fail to behave as planned. Furthermore, the model's reliance on training data raises worries about possible biases or weaknesses in the resulting code.
 
-While the experiments demonstrated ChatGPT's promise, it is crucial to recognize its limits. In rare circumstances, the produced code may contain flaws or fail to behave as planned, emphasizing the importance of human supervision and improvement. Furthermore, the model's reliance on training data raises worries about possible biases or weaknesses in the resulting code.
+In the future, ChatGPT has a challenge to make itself adaptable to the appropriate context. They may generate correct code but actually lack a deeper understanding of what is being asked or the core of the problem. This can lead to incorrect solutions, potential security vulnerabilities, or inefficient code.
 
-Despite their own limitations, it is impossible to ignore ChatGPT's potential influence on software development ethic. The model's capacity as a helpful tool for developers is demonstrated by its capacity to generate code that complies with industry standards and carry out challenging programming tasks. This will not replace 100\% software development but With further development and improvement, ChatGPT has the potential to enhance and streamline software development workflows, allowing developers to work more efficiently and creatively.
+Despite their own limitations, it is impossible to ignore ChatGPT's potential influence on software development ethics. The model's capacity as a helpful tool for developers is demonstrated by its capacity to generate code that complies with industry standards and carry out challenging programming tasks. ChatGPT cannot replace 100\% software development but With further development and improvement, ChatGPT has the potential to enhance and streamline software development workflows, and allowing developers to work more efficiently and creatively.
 
-ChatGPT model already comes up with new version, namely version ChatGPT 4 and produces better result than ChatGPT 3.5. Because, there's are limitation in our research, all the research above is using ChatGPT 3.5 and we cannot see the different between those version. For the purpose of future research, we suggest to make a comparison between another model like ChatGPT 4 or Google Bard. So, future research not only finding the function of ChatGPT model on software development but we encourage to find the best model to suit up software engineer to do a daily programmer task by comparing all existing model.  
+The ChatGPT model already has a new version, namely ChatGPT 4, and it produces better results than ChatGPT 3.5. Because there's a limitation in our research, all the research above is using ChatGPT 3.5, and we cannot see the difference between those versions. For the purpose of future research, we suggest making a comparison between another model like ChatGPT 4 or Google Bard. So, future research will not only find the function of the ChatGPT model in software development, but also encourage finding the best model to suit up software engineers to do a daily programmer task by comparing all existing models.
 
 \begin{thebibliography}{00}
 \bibitem{b1} N. M. S. Surameery and M. Y. Shakor, “Use Chat GPT to Solve Programming Bugs,” International Journal of Information technology and Computer Engineering, no. 31, pp. 17–22, Jan. 2023, doi: 10.55529/ijitc.31.17.22. 
